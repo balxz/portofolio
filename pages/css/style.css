@@ -148,10 +148,6 @@ font-size: 15px;
 margin-bottom: 10px;
 }
 
-.skills-section:hover {
-box-shadow: 0 0 20px rgb(111,111,111)
-}
-
 .skill-item {
 background-color: #1f1f1f;
 border-radius: 10px;
@@ -162,7 +158,8 @@ transition: transform 0.3s ease, background-color 0.3s ease;
 
 .skill-item:hover {
 transform: translateY(-5px);
-background-color: #2a2a2a;
+box-shadow: 0 0 20px #2a2a2a;
+/*background-color: #2a2a2a;*/
 }
 
 .skill-item h4 {
