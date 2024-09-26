@@ -1,0 +1,209 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Patrick Hand';
+-webkit-tap-highlight-color: transparent;
+}
+
+body {
+background-color: #121212;
+color: white;
+padding: 20px;
+overflow-x: hidden;
+}
+
+.container {
+max-width: 500px;
+margin: 0 auto;
+text-align: center;
+animation: fadeIn 1s ease-in-out;
+}
+
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+}
+
+.nav__logo {
+font-weight: 700;
+color: white;
+}
+
+.nav__toggle {
+font-size: 1.25rem;
+cursor: pointer;
+color: white;
+}
+
+.menu {
+display: none; 
+position: fixed; 
+top: 0; 
+left: 0;
+right: 0;
+background-color: rgba(31,31,31,0.401); 
+backdrop-filter: blur(25px); 
+padding: 20px;
+border-bottom: 1px solid #444;
+animation: slideDown 0.3s ease-in-out;
+}
+
+.menu.active {
+display: block; 
+animation: slideDown 0.3s ease-in-out; 
+}
+
+.menu.hidden {
+animation: slideUp 0.3s ease-in-out; 
+}
+
+.close-btn {
+font-size: 1.5rem;
+color: white;
+cursor: pointer;
+position: absolute;
+top: 10px;
+right: 10px;
+transition: transform 0.2s; 
+}
+
+.close-btn:active {
+transform: scale(0.9); 
+}
+
+.menu ul {
+list-style: none;  
+padding: 0; 
+}
+
+.menu li {
+margin: 10px 0; 
+}
+
+.menu a {
+text-decoration: none; 
+color: white;  
+display: flex; 
+align-items: center; 
+}
+
+.menu a i {
+margin-right: 8px; 
+}
+
+@keyframes slideDown {
+from {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+to {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+@keyframes slideUp {
+from {
+  transform: translateY(0);
+  opacity: 1;
+}
+to {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+}
+
+.profile-section {
+margin-bottom: 30px;
+animation: slideInLeft 1s ease-out;
+}
+
+.profile-section img {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+
+.profile-section h2 {
+font-size: 24px;
+margin-bottom: 5px;
+}
+
+.location {
+font-size: 14px;
+color: #aaa;
+margin-bottom: 10px;
+}
+
+.about-section, .skills-section, .motivation-section {
+margin-bottom: 30px;
+}
+
+.skills-section h3, .about-section h3, .motivation-section h3 {
+font-size: 15px;
+margin-bottom: 10px;
+}
+
+.skill-item {
+background-color: #1f1f1f;
+border-radius: 10px;
+padding: 15px;
+margin-bottom: 15px;
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+transform: translateY(-5px);
+background-color: #2a2a2a;
+}
+
+.skill-item h4 {
+font-size: 18px;
+color: #00d1b2;
+margin-bottom: 5px;
+}
+
+.motivation-wrapper {
+display: flex;
+align-items: center;
+border: 1px solid white;
+padding: 10px;
+border-radius: 15px;
+background-color: #1f1f1f;
+max-width: 400px;
+margin: 0 auto;
+}
+
+.motivation-text {
+font-size: 11px;
+color: #fff;
+font-style: italic;
+margin-left: 10px;
+}
+
+.pf-motivasi {
+width: 40px;
+height: 40px;
+border-radius: 10px;
+}
+
+footer {
+margin-top: 20px;
+font-size: 12px;
+color: #555;
+animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+0% { transform: translateX(-100%); opacity: 0; }
+100% { transform: translateX(0); opacity: 1; }
+}
