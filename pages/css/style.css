@@ -6,10 +6,6 @@ font-family: 'Patrick Hand';
 -webkit-tap-highlight-color: transparent;
 }
 
-*:hover {
-  box-shadow: 0 0 20px rgba(46, 5, 5, 0.8);
-}
-
 body {
 background-color: #121212;
 color: white;
@@ -153,7 +149,7 @@ margin-bottom: 10px;
 }
 
 .skills-section:hover {
-rgb(111,111,111)
+box-shadow: 0 0 20px rgb(111,111,111)
 }
 
 .skill-item {
