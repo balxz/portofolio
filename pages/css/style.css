@@ -152,6 +152,10 @@ font-size: 15px;
 margin-bottom: 10px;
 }
 
+.skills-section:hover {
+rgb(111,111,111)
+}
+
 .skill-item {
 background-color: #1f1f1f;
 border-radius: 10px;
