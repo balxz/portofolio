@@ -159,7 +159,7 @@ transition: transform 0.3s ease, background-color 0.3s ease;
 .skill-item:hover {
 transform: translateY(-5px);
 box-shadow: 0 0 20px #2a2a2a;
-/*background-color: #2a2a2a;*/
+background-color: #2a2a2a;
 }
 
 .skill-item h4 {
